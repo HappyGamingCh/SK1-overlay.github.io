@@ -1,10 +1,18 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(https://imgur.com/iNRUHnW.png);
+    background: url(https://imgur.com/4irgoYe.png);
     height: 598px;
     width: 806px;
     /*    margin-left: -403px;
         margin-top: -280px;*/
+}
+
+.ds4.disconnected {
+    background: url(ps4-assets/disconnected.svg);
+}
+
+.ds4.disconnected div {
+    display: none;
 }
 
 .ds4 .triggers {
@@ -17,7 +25,7 @@
 .ds4 .trigger {
     width: 99px;
     height: 100%;
-    background: url(https://imgur.com/cGrS7WC.png);
+    background: url(https://imgur.com/stf7fOn.png);
     opacity: 0;
 }
 
@@ -33,7 +41,7 @@
 .ds4 .bumper {
     width: 99px;
     height: 23px;
-    background: url(https://imgur.com/287Hnmv.png) no-repeat;
+    background: url(https://imgur.com/X8zOF3c.png) no-repeat;
     opacity: 0;
 }
 
@@ -60,6 +68,51 @@
     transform: rotateY(180deg);
 }
 
+.ds4 .touchpad {
+    width: 262px;
+    height: 151px;
+    position: absolute;
+    left: 272px;
+    top: 122px;
+}
+
+.ds4 .touchpad.pressed {
+    background: url(ps4-assets/touchpad.svg) no-repeat center;
+}
+
+.ds4 .meta {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 382px;
+    bottom: 216px;
+}
+
+.ds4 .meta.pressed {
+    background: url(ps4-assets/meta.svg) no-repeat center;
+}
+
+/*Not needed, but I like keeping them here for posterity*/
+/*.ds4 .quadrant{
+position: absolute;
+background: url(ps4-assets/player-n.svg);
+height: 17px;
+width: 111px;
+top: 140px;
+left: 240px;
+}
+.ds4 .p0{
+background-position: 0 -6px;
+}
+.ds4 .p1{
+background-position: 0 -28px;
+}
+.ds4 .p2{
+background-position: 0 -49px;
+}
+.ds4 .p3{
+background-position: 0 -70px;
+}*/
 .ds4 .arrows {
     position: absolute;
     width: 352px;
@@ -69,7 +122,7 @@
 }
 
 .ds4 .back, .ds4 .start {
-    background: url(https://imgur.com/3kztU3w.png);
+    background: url(https://imgur.com/Lpynct7.png);
     width: 28px;
     height: 46px;
     opacity: 0;
@@ -79,6 +132,10 @@
     /* background-position-y: -21px; */
     /* margin-top: 2px; */
     opacity: 1;
+}
+
+.ds4.white .back, .ds4 .start {
+    background-image: url(https://imgur.com/EBD1FM1.png);
 }
 
 .ds4 .back {
@@ -104,7 +161,7 @@
     position: absolute;
     width: 55px;
     height: 55px;
-    background: url(https://imgur.com/iI7OEXV.png);
+    background: url(https://imgur.com/XwgO8lS.png);
 }
 
 .ds4 .button.pressed {
@@ -144,7 +201,7 @@
 
 .ds4 .stick {
     position: absolute;
-    background: url(https://imgur.com/HdEFLcR.png);
+    background: url(https://imgur.com/6f0oCiJ.png);
     height: 94px;
     width: 94px;
 }
@@ -176,7 +233,7 @@
 }
 
 .ds4 .face {
-    background: url(https://imgur.com/bVD5ZdE.png);
+    background: url(https://imgur.com/LbEQqMA.png);
     position: absolute;
 }
 
